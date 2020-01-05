@@ -16,7 +16,7 @@ cat << EOF
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@${tag}
+      uses: rust-accel/docker-action@${tag}
       with:
         path: rust-cuda-test
 EOF
@@ -34,7 +34,7 @@ cat << EOF
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@${tag}
+      uses: rust-accel/docker-action@${tag}
       with:
         path: rust-cuda-test
 EOF
@@ -51,7 +51,7 @@ cat << EOF
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@${tag}
+      uses: rust-accel/docker-action@${tag}
       with:
         path: rust-cuda-test
 EOF
