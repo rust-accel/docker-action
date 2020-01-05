@@ -15,6 +15,8 @@ cat << EOF
     name: CentOS ${CENTOS_VERSION}, CUDA ${CUDA_VERSION}
     steps:
     - uses: actions/checkout@v1
+    - name: Login GitHub Registry
+      run: docker login docker.pkg.github.com -u owner -p \${{ secrets.GITHUB_TOKEN }}
     - name: cargo test
       id: test
       uses: rust-accel/docker-action@${tag}
@@ -33,6 +35,8 @@ cat << EOF
     name: Ubuntu ${UBUNTU_VERSION}, CUDA ${CUDA_VERSION}
     steps:
     - uses: actions/checkout@v1
+    - name: Login GitHub Registry
+      run: docker login docker.pkg.github.com -u owner -p \${{ secrets.GITHUB_TOKEN }}
     - name: cargo test
       id: test
       uses: rust-accel/docker-action@${tag}
@@ -50,6 +54,8 @@ cat << EOF
     name: Ubuntu ${UBUNTU_VERSION}, CUDA ${CUDA_VERSION}
     steps:
     - uses: actions/checkout@v1
+    - name: Login GitHub Registry
+      run: docker login docker.pkg.github.com -u owner -p \${{ secrets.GITHUB_TOKEN }}
     - name: cargo test
       id: test
       uses: rust-accel/docker-action@${tag}
