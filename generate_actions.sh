@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cat << EOF
+name: Test Actions
 on: [push]
 jobs:
 EOF

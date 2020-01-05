@@ -1,3 +1,4 @@
+name: Test Actions
 on: [push]
 jobs:
   centos6-cuda8_0:
@@ -7,7 +8,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos6-cuda8_0
+      uses: rust-accel/docker-action@centos6-cuda8_0
       with:
         path: rust-cuda-test
   centos6-cuda9_0:
@@ -17,7 +18,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos6-cuda9_0
+      uses: rust-accel/docker-action@centos6-cuda9_0
       with:
         path: rust-cuda-test
   centos6-cuda9_1:
@@ -27,7 +28,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos6-cuda9_1
+      uses: rust-accel/docker-action@centos6-cuda9_1
       with:
         path: rust-cuda-test
   centos6-cuda9_2:
@@ -37,7 +38,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos6-cuda9_2
+      uses: rust-accel/docker-action@centos6-cuda9_2
       with:
         path: rust-cuda-test
   centos6-cuda10_0:
@@ -47,7 +48,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos6-cuda10_0
+      uses: rust-accel/docker-action@centos6-cuda10_0
       with:
         path: rust-cuda-test
   centos6-cuda10_1:
@@ -57,7 +58,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos6-cuda10_1
+      uses: rust-accel/docker-action@centos6-cuda10_1
       with:
         path: rust-cuda-test
   centos6-cuda10_2:
@@ -67,7 +68,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos6-cuda10_2
+      uses: rust-accel/docker-action@centos6-cuda10_2
       with:
         path: rust-cuda-test
   centos7-cuda8_0:
@@ -77,7 +78,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos7-cuda8_0
+      uses: rust-accel/docker-action@centos7-cuda8_0
       with:
         path: rust-cuda-test
   centos7-cuda9_0:
@@ -87,7 +88,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos7-cuda9_0
+      uses: rust-accel/docker-action@centos7-cuda9_0
       with:
         path: rust-cuda-test
   centos7-cuda9_1:
@@ -97,7 +98,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos7-cuda9_1
+      uses: rust-accel/docker-action@centos7-cuda9_1
       with:
         path: rust-cuda-test
   centos7-cuda9_2:
@@ -107,7 +108,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos7-cuda9_2
+      uses: rust-accel/docker-action@centos7-cuda9_2
       with:
         path: rust-cuda-test
   centos7-cuda10_0:
@@ -117,7 +118,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos7-cuda10_0
+      uses: rust-accel/docker-action@centos7-cuda10_0
       with:
         path: rust-cuda-test
   centos7-cuda10_1:
@@ -127,7 +128,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos7-cuda10_1
+      uses: rust-accel/docker-action@centos7-cuda10_1
       with:
         path: rust-cuda-test
   centos7-cuda10_2:
@@ -137,7 +138,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@centos7-cuda10_2
+      uses: rust-accel/docker-action@centos7-cuda10_2
       with:
         path: rust-cuda-test
   ubuntu1604-cuda8_0:
@@ -147,7 +148,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1604-cuda8_0
+      uses: rust-accel/docker-action@ubuntu1604-cuda8_0
       with:
         path: rust-cuda-test
   ubuntu1604-cuda9_0:
@@ -157,7 +158,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1604-cuda9_0
+      uses: rust-accel/docker-action@ubuntu1604-cuda9_0
       with:
         path: rust-cuda-test
   ubuntu1604-cuda9_1:
@@ -167,7 +168,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1604-cuda9_1
+      uses: rust-accel/docker-action@ubuntu1604-cuda9_1
       with:
         path: rust-cuda-test
   ubuntu1604-cuda9_2:
@@ -177,7 +178,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1604-cuda9_2
+      uses: rust-accel/docker-action@ubuntu1604-cuda9_2
       with:
         path: rust-cuda-test
   ubuntu1604-cuda10_0:
@@ -187,7 +188,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1604-cuda10_0
+      uses: rust-accel/docker-action@ubuntu1604-cuda10_0
       with:
         path: rust-cuda-test
   ubuntu1604-cuda10_1:
@@ -197,7 +198,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1604-cuda10_1
+      uses: rust-accel/docker-action@ubuntu1604-cuda10_1
       with:
         path: rust-cuda-test
   ubuntu1604-cuda10_2:
@@ -207,7 +208,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1604-cuda10_2
+      uses: rust-accel/docker-action@ubuntu1604-cuda10_2
       with:
         path: rust-cuda-test
   ubuntu1804-cuda9_2:
@@ -217,7 +218,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1804-cuda9_2
+      uses: rust-accel/docker-action@ubuntu1804-cuda9_2
       with:
         path: rust-cuda-test
   ubuntu1804-cuda10_0:
@@ -227,7 +228,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1804-cuda10_0
+      uses: rust-accel/docker-action@ubuntu1804-cuda10_0
       with:
         path: rust-cuda-test
   ubuntu1804-cuda10_1:
@@ -237,7 +238,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1804-cuda10_1
+      uses: rust-accel/docker-action@ubuntu1804-cuda10_1
       with:
         path: rust-cuda-test
   ubuntu1804-cuda10_2:
@@ -247,6 +248,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: cargo test
       id: test
-      uses: termoshtt/rust-cuda-docker-action@ubuntu1804-cuda10_2
+      uses: rust-accel/docker-action@ubuntu1804-cuda10_2
       with:
         path: rust-cuda-test
